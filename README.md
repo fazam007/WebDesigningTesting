@@ -1,2 +1,2 @@
 # WebDesigningTesting
-The website for web design for everyone.
+The website for web designer for everyone.
