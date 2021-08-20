@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="icon"
+      href="https://www.designevo.com/"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <title>Practice | Boostrap and JavaScript</title>
+  </head>
+
+  <body onload="loadColors()">
+    <h1 id="test">Hello practice for JavaScript</h1>
+    <span id="test1">On load time change</span><br />
+    <button type="button" onclick="setDate()">Display Date</button><br />
+    <hr />
+    <button type="button" onclick="getChange()">First</button><br />
+    <button type="button" onclick="getChangeTwo()">Second</button><br />
+
+    <h4>This will not change.</h4>
+    <h4
+      id="test2"
+      onclick="document.write(e + ' You are very funny guy, enjoy the life.')"
+    >
+      This will change.
+    </h4>
+    <h4 id="test3">This will change.</h4>
+    <h4>This will not change either.</h4>
+    <hr />
+
+    <button type="button" onclick="openMe()">Open</button>
+    <button type="button" onclick="closeMe()">Close</button>
+    <p id="test4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+      possimus<br />
+      vitae incidunt ab corrupti modi impedit, hic ex quae neque ullam magni<br />
+      praesentium minima omnis ipsa et necessitatibus dolor laborum.
+    </p>
+    <hr />
+
+    <h3>Practice of "this"</h3>
+    <div id="test5" class="hover"></div>
+    <img
+      src="images/Farooq.png"
+      alt="This is Farooq Pic"
+      style="width: 100px; height: 120px"
+      onmouseover="showMouseOver(this)"
+      onmouseleave="showMouseLeave(this)"
+    />
+    <img
+      src="images/Sikander.jpg"
+      alt="This is Sikander Pic"
+      style="width: 100px; height: 120px"
+      onmouseover="showMouseOver(this)"
+      onmouseleave="showMouseLeave(this)"
+    />
+    <img
+      src="images/kwachkhan.jpg"
+      alt="This is kwachkhan Pic"
+      style="width: 100px; height: 120px"
+      onmouseover="showMouseOver(this)"
+      onmouseleave="showMouseLeave(this)"
+    />
+    <hr />
+
+    <h2>Assignment work</h2>
+    <div id="image">Hover over an image below to display here.</div>
+
+    <img
+      class="preview"
+      alt="He is going to be a doctor InshaAllah."
+      src="images/Sikander.jpg"
+      style="width: 100px; height: 120px"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <img
+      class="preview"
+      alt="Trying ot develop his development skills."
+      src="images/Farooq.png"
+      style="width: 100px; height: 120px"
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <img
+      class="preview"
+      src="images/kwachkhan.jpg"
+      style="width: 100px; height: 120px"
+      alt="Kwach Khan The great."
+      onmouseover="upDate(this)"
+      onmouseout="unDo()"
+    />
+    <hr />
+
+    <h3>Arrays</h3>
+    <button type="button" onclick="getElemnt()">Display</button>
+    <button type="button" onload="loadColors()"></button>
+    <button type="button" onclick="myColors()">Your fav colors?</button>
+    <p id="colors"></p>
+    <hr />
+    <h3>Looping</h3>
+    <button type="button" onmouseover="faarLoop()">Show avg</button>
+    <p id="tst7">Avg will be shown here..</p>
+    <button type="button" onmouseover="showww()">Hover here</button>
+    <h4 id="tst6">Name will be shown here, with greetings... :)</h4>
+    <hr />
+
+    <h3>Nested mahool</h3>
+    <h4 id="tst8" onclick="nestedMahool()">Color will be shown here...</h4>
+    <hr />
+
+    <h3>Form Mahool</h3>
+    <form action="">
+      <label for="Name">Num di sa day: </label>
+      <input type="text" name="Name" id="num" placeholder="placeholder" /><br />
+      <label for="email">Email di sa day: </label>
+      <input
+        type="email"
+        name="email"
+        id="num"
+        placeholder="placeholder"
+      /><br />
+      <label for="pass">Password di sa day: </label>
+      <input
+        type="password"
+        name="pass"
+        id="num"
+        placeholder="placeholder"
+      /><br />
+      <label for="radio">Radio Button</label>
+      <input
+        type="radio"
+        name="radio"
+        id="num"
+        placeholder="radiobutton"
+      /><br />
+      <label for="radio">Radio Button</label>
+      <input
+        type="radio"
+        name="radio"
+        id="num"
+        placeholder="radiobutton"
+      /><br />
+      <label for="check">Check Button</label>
+      <input
+        type="checkbox"
+        name="check"
+        id="num"
+        placeholder="checkbox"
+      /><br />
+      <label for="check">Check Button</label>
+      <input
+        type="checkbox"
+        name="check"
+        id="num"
+        placeholder="checkbox"
+      /><br />
+      <label for="check">Check Button</label>
+      <input
+        type="checkbox"
+        name="check"
+        id="num"
+        placeholder="checkbox"
+      /><br />
+      <input type="submit" name="Name" id="num" placeholder="submit" /><br />
+      <input type="number" name="Name" id="num" placeholder="number" /><br />
+      <input type="range" name="Name" id="num" placeholder="range" /><br />
+      <input type="color" name="Name" id="num" placeholder="color" /><br />
+      <input type="date" name="Name" id="num" placeholder="date" /><br />
+      <input type="url" name="Name" id="num" placeholder="url" /><br />
+    </form>
+    <br />
+    <fieldset>
+      <legend>Form varification</legend>
+      <form>
+        <label>Email: </label>
+        <input type="email" name="email1" id="emailAdd" value="" />
+        <label>Repeat the email: </label>
+        <input
+          type="email"
+          name="email2"
+          id="emailRepeat"
+          value=""
+          onchange="return compare()"
+        />
+        <input
+          type="submit"
+          value="Confirm emails"
+          onclick="return compare()"
+        />
+        <br />
+        <br />
+        <label for="fName"
+          >First Name: <input type="text" name="fName" id="fName" required
+        /></label>
+        <label for="lName"
+          >Last Name:
+          <input type="text" name="lName" id="lName" required /></label
+        ><br />
+        <label for="yesNick"
+          >Nick Name:
+          <input
+            type="checkbox"
+            name="yesNick"
+            id="yesNick"
+            value="yes"
+            onchange="nickNameFucn()"
+        /></label>
+        <div id="nick">
+          <label for="nickName"
+            ><input type="text" name="nickName" id="nickName"
+          /></label>
+        </div>
+        <input type="submit" value="varify" />
+      </form>
+    </fieldset>
+    <hr />
+
+    <h1>JavaScript Homework</h1>
+    <p>
+      Add the JavaScript code needed to enable auto-complete on this form.
+      Whenever the checkbox is checked, the code should automatically copy the
+      values from Shipping Name and Shipping Zip into the Billing Name and
+      Billing Zip. If the checkbox is unchecked, the Billing Name and Billing
+      Zip should go blank.
+    </p>
+
+    <form>
+      <fieldset>
+        <legend>Shipping Information</legend>
+        <label for="shippingName">Name:</label>
+        <input type="text" name="shipName" id="shippingName" required /><br />
+        <label for="shippingZip">Zip code:</label>
+        <input
+          type="text"
+          name="shipZip"
+          id="shippingZip"
+          pattern="[0-9]{5}"
+          required
+        /><br />
+      </fieldset>
+      <input
+        type="checkbox"
+        id="same"
+        name="same"
+        onchange="billingFunction()"
+      />
+      <label for="same">Is the Billing Information the Same?</label>
+
+      <fieldset>
+        <legend>Billing Information</legend>
+        <label for="billingName">Name:</label>
+        <input type="text" name="billName" id="billingName" required /><br />
+        <label for="billingZip">Zip code:</label>
+        <input
+          type="text"
+          name="billZip"
+          id="billingZip"
+          pattern="[0-9]{5}"
+          required
+        /><br />
+      </fieldset>
+      <input type="submit" value="Verify" />
+    </form>
+    <hr />
+
+    <script src="jayes/index.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
